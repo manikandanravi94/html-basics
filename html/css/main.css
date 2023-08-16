@@ -1,0 +1,15 @@
+html {
+    font-size: 18px;
+}
+body {
+    background-color: #84cc8b;
+    /* background-color: #99b3af; */
+    color: rgb(246, 249, 248);
+}
+p {
+    font-size: 20px;
+}
+
+a {
+    color: rgb(246, 249, 248);
+}

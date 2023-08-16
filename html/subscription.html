@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="author" content="manikandan" />
+    <meta
+      name="description"
+      content="Subscription for private members to mani's development community"
+    />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <style>
+      th {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        |&nbsp;&nbsp; <a href="index.html">Home</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+        <a href="personalInfo.html">Profile</a> &nbsp;&nbsp;&nbsp; |
+      </nav>
+    </header>
+    <main>
+      <br />
+      <form>
+        <fieldset>
+          <!-- fieldset is the semantic tag to represent the form inputs..
+                 it will envelope everything in the small box to differentiate from other elements
+            legends use to give heading for that particular fieldset -->
+          <legend>Sign up to subscribe courses</legend>
+          <table>
+            <!-- caption can be added to the table to give heading for the table
+             <caption>
+            Subscribe to the courses
+          </caption> -->
+            <thead>
+              <!-- <tr>
+                <td>Data</td>
+                <th>Value</th>
+            </tr> -->
+            </thead>
+            <tbody>
+              <tr>
+                <!-- label "for" and input "id" is tied up.. when we click on the label directly it vl take us to the input tag -->
+                <th><label for="firstName">First Name</label></th>
+                <td>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder="Enter your first Name"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th><label for="lastName">Last Name</label></th>
+                <td>
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    placeholder="Enter your last Name"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th><label for="email">Email</label></th>
+                <td>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Example@gmail.com"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label for="phone">Phone Number</label>
+                </th>
+                <td>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Enter your mobile number"
+                    pattern="[0-9]{10}"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label for="Indian">Nationality</label>
+                </th>
+                <td>
+                  <input
+                    type="radio"
+                    name="nationality"
+                    id="Indian"
+                    value="Indian"
+                    checked
+                  />
+                  <label for="Indian">Indian</label>
+                  <input
+                    type="radio"
+                    name="nationality"
+                    id="Other"
+                    value="Other"
+                  />
+                  <label for="Other">Other</label>
+                </td>
+              </tr>
+              <!-- checked is the default value to be chosen for radio button.. selected is the default value chosen for select type -->
+              <tr>
+                <th>
+                  <label for="front-end">Courses Interested</label>
+                </th>
+                <td>
+                  <input
+                    type="checkbox"
+                    name="courses"
+                    id="front-end"
+                    value="front-end"
+                  />
+                  <label for="front-end">Front-End</label>
+                  <input
+                    type="checkbox"
+                    name="courses"
+                    id="back-end"
+                    value="back-end"
+                  />
+                  <label for="back-end">Back-End</label>
+                  <input
+                    type="checkbox"
+                    name="courses"
+                    id="full-stack"
+                    value="full-stack"
+                    checked
+                  />
+                  <label for="full-stack">Full-Stack</label>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label for="profession"> Profession</label>
+                </th>
+                <td>
+                  <select name="profession" id="profession">
+                    <option value="default"></option>
+                    <optgroup label="Learning community">
+                      <option value="student">Student</option>
+                      <option value="JobSeeker">Job-Seeker</option>
+                    </optgroup>
+                    <optgroup label="Earning Community">
+                      <option value="developer">Developer</option>
+                      <option value="support">Support Engineers</option>
+                      <option value="non-it">Non-IT-Professionals</option>
+                    </optgroup>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="submit" />
+                <input type="submit" formaction="https://httpbin.org/post" formmethod="post" value="Post">
+                </td>
+                <td><input type="reset" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
