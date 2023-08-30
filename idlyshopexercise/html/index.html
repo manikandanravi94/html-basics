@@ -5,11 +5,11 @@
     <meta name="description" content="Taco shop home page" />
     <title>Coimbatore Idly shop</title>
     <style>
-        aside {
+        /* aside {
   width: 40%;
   padding-left: 0.5rem;
   margin-left: 0.5rem;
-  /* float: right; */
+  float: right;
   box-shadow: inset 5px 0 5px -5px #29627e;
   font-style: italic;
   color: #29627e;
@@ -17,7 +17,7 @@
 
 aside > p {
   margin: 0.5rem;
-}
+} */
 table {
   border: 1px solid;
 }
@@ -58,8 +58,11 @@ th, td {
           interesting place to our little town
         </p>
         <aside>
-           <h5> Legacy to our shop</h5>
+          <!-- details tag is used to hide content with summary in its coverage.. content specified in other tag will be visible when you click on it -->
+          <details>
+           <summary> Legacy to our shop</summary>
            <p> Our Idly shop was a beautiful dream which came to true with our employees hard work and passion</p>
+          </details>
         </aside>
       </article>
       <br>
@@ -71,14 +74,14 @@ th, td {
             <thead>
               <th colspan="3">Idly Special</th>
               <tr>
-                <th>Idiles</th>
-                <th>qty</th>
-                <th>Price</th>
+                <th scope="col">varieties</th>
+                <th scope="col">qty</th>
+                <th scope="col">Price</th>
               </tr>
             </thead>
             <tbody>
                <tr>
-                <td rowspan="3"> Idly</td>
+                <th scope="row" rowspan="3"> Idly</th>
                 <td>1</td>
                 <td>20.00</td>
                </tr>

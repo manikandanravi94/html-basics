@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    /* width:50%; */
+}
+/* em refers the parent element in the below case em refers the content size as the parent */
+h1 {
+    margin : 2em;
+    font-size: 32px;
+    border : 10px solid green;
+    padding : 1em 5em 1em 5em;
+    width : 50%;
+    outline-offset: 20px ;
+    outline: dashed powderblue;
+    outline-width: 30px;
+}
+main {
+    margin:1em;
+}
+p {
+    padding: 2em 1em 0em 1em;
+}
+ul {
+   margin : 0em;
+   padding : 0em 5em 1em 5em;
+}

@@ -1,0 +1,36 @@
+/*
+We can provide the propeties to the whole html by using * as a reference in the css
+By default there will be some values for the below properties. we can change those by using the below reference
+*{
+paddding:0;
+margin:0;
+} 
+
+*/
+header {
+    width: 50%;
+}
+
+h1 {
+    border: 2px dashed red;
+    width: 50%;
+}
+
+body {
+    font: italic 1.2em "Fira Sans", serif;
+    min-height: 100vh;
+}
+main{
+    /* background-color: powderblue; */
+    /* width:50%; */
+}
+
+#ch {
+  width: 40ch;
+}
+/* percentage and vw are mostly same but percentage is preferred over vw as it will not provide horizontal scroll bar at leter part
+#vw{
+    width:80vw;
+}
+
+ */

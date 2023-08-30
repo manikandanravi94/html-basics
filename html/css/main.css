@@ -1,15 +1,29 @@
 html {
     font-size: 18px;
 }
-body {
+/* body {
     background-color: #84cc8b;
-    /* background-color: #99b3af; */
-    color: rgb(246, 249, 248);
-}
+     background-color: #99b3af; 
+    
+} */
+
+body {
+    /* background-image: url("../images/flower_bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+    /* background-color: #84cc8b; */
+    /* color: rgb(238, 178, 189); */
+    background-color: #B5C9C3;
+    color: #112A46;
+  }
+
 p {
     font-size: 20px;
 }
 
 a {
-    color: rgb(246, 249, 248);
+    /* color: rgb(246, 249, 248); */
+    /* color: rgb(241, 209, 215); */
+    color: #112A46;
 }
