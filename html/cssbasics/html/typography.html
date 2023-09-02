@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Manikandan">
+        <meta name="description" content="Typography sample">
+        <link rel="icon" href="../images/m-icon.jpg" type="images/x-icon">
+        <style>
+            body {
+            font-size: 1.5rem;
+            background-color: powderblue;
+            color: #121211;
+            /*Three values defined as if one is not present. another one will be considered
+                */
+            font-family: "Gill Sans Extrabold", ui-monospace, serif;
+                /* font-optical-sizing: auto; */
+                /* font-stretch: condensed; */
+                /* font-style: oblique; */
+                /*We can import the required font from online from google using @import and style tag
+                @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+                */
+            }
+            input {
+                font-size: inherit;
+            }
+            .indent {
+                text-indent: 2em;
+            }
+            .decoration{
+                /* text-decoration is a short hand property for line, color, style, thickness 
+                values provided in the following format will be considered*/
+                text-decoration: underline solid;
+            }
+            .transform{
+                text-transform: capitalize;
+                font-variant-position: sub;
+            }
+            .lineheight{
+                line-height: 1.5em;
+                /*font-variant-alternates*/
+                font-variant-alternates: historical-forms;
+                /* font-variation-settings: 'wdth' 75; */
+                /* font-variant-east-asian: ruby; This property will be used for east asian languages like japan and chinese */
+            }
+            .letterspacing{
+              
+                letter-spacing: 0.2em;
+                word-spacing: 2em;
+            }
+            .align {
+                text-indent: 10em;
+                text-align: justify;
+                font-weight: 200;
+                /*font-weight can be varied from 100 to 900. from lighter to bolder. */
+            }
+            .fontfamily {
+                /*caps options to set for the fonts. we have different values like petite caps,small-caps etc*/
+                /*font variant short-hand properties
+font-variant-alternates
+font-variant-caps
+font-variant-east-asian
+font-variant-emoji
+font-variant-ligatures
+font-variant-numeric
+font-variant-position
+                */
+                font-variant-caps: petite-caps;
+
+                padding: 1em 2em 1em 2em;
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            &nbsp;<a href="../html/index.html">Home</a>&nbsp; |
+            </nav>
+        <header><h1>Learn Typography</h1></header>
+        <main>
+            <h3>Inherit sample</h3>
+            <p> When we apply rem, it will be applied only for few elements not for all the elements. if we want to apply the same for all the elements we can use the "inherit" value for font-size property</p>
+            <p>
+                <form>
+                    <label for="name">
+                        Name : 
+                    </label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </form>
+            </p>
+            <h3>Text-Decoration</h3>
+            <p class="decoration">It is used to provide styles to the text. example values for the properties <strong>underline, overline</strong>
+            </p>
+            <h3>Text-transform</h3>
+            <p class="transform">It is used to transform a text into a different form like <strong>capitalize, uppercase</strong> etc</p>
+            <h3>Text-align</h3>
+            <p class="align">Align the text <strong>right, left, justify</strong></p>
+            <h3>Text-indent</h3>
+            <p class="indent">It will indent the text from the header</p>
+            <h3>Line-height</h3>
+            <p class="lineheight">It is used to override the default value provided by browser, difference between two lines</p>
+            <h3 >Letter-spacing</h3>
+            <p class="letterspacing">It is used to provide space between characters</p>
+            <h3>Font-family</h3>
+            <p class="fontfamily">It is defined to set the values for font. mostly we will be specifying multiple values as if one value is not present another values will be considered for the font. We need to define the default font</p>
+        </main>
+        <footer></footer>
+    </body>
+</html>
