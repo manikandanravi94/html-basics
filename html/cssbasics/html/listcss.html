@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="Author" content="Manikandan">
+        <meta name="description" content="Learn list Css">
+        <link rel="icon" href="../images/m-icon.jpg" type="images/x-icon">
+        <title>List Css</title>
+        <style>
+          body {
+            background-color: powderblue;
+          }
+          ol {
+            /*
+            disc is the type refered for ul default type
+
+            */
+            list-style-type: upper-roman;
+          }
+          ul {
+            text-align: center;
+            list-style: square inside ;
+        /* list style is the short hand property for list-style-type,position and image 
+           list-style-position aligns the roman-numerals aligned with the text(inline) outline keeps the roman numerals at the left corner irrespective of the content
+        */
+          }
+          .innerlist{
+            list-style-type: disc;
+            list-style-image: url("../images/bullet-list-icon.jpg");
+          }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav><a href="../html/index.html">Home</a></nav>
+            <h1>List Css samples</h1></header>
+        <main>
+            <h2>Learning RoadMap - Tech stacks yet to cover</h2>
+            <h3>Back-end</h3>
+        <!-- start and reversed are the two attributes mentions the start and order of the list-->
+            <ol start="20" reversed>
+                <li>Kubernetes</li>
+                <li>Cloud native</li>
+                <li>Hld's & Lld's</li>
+                <li>Data structures & Algorithms</li>
+            </ol>
+            <h3>Front-end</h3>
+            <ul>
+                <li>Css - frameworks</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>Deployments & build optimization on UI</li>
+                <ul class="innerlist">
+                    <li>unit-testing</li>
+                    <li>e2e Testing</li>
+                </ul>
+            </ul>
+        </main>
+        <footer></footer>
+    </body>
+</html>

@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="anchorapplicablecss" />
     <meta name="author" content="Manikandan" />
-    <meta name="description" content="Css basics" />
-    <title>Learn CSS</title>
     <link rel="icon" href="../images/m-icon.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+    <title>Anchor Css</title>
+    <style>
+      body {
+        background-color: powderblue;
+      }
+      p {
+        padding: 0em 20em 1em 3em;
+        text-align: justify;
+      }
+      a {
+        outline: none;
+        text-decoration: none;
+        /* color: #fff; */
+        cursor: none;
+      }
+      a:visited {
+        color: green;
+      }
+      a:active {
+        color: red;
+       opacity: 0.7;
+      }
+      a:hover {
+        cursor: alias;
+        background-color: bisque;
+        color: blueviolet;
+      }
+    </style>
   </head>
   <body>
-    <header><h1>Css units and size</h1></header>
+    <header>
+      
+      <nav>
+        &nbsp;<a href="../html/cssbasics.html">CSS Basics</a>&nbsp; |
+        <a href="../html/box-property.html">Learn Box styling</a>&nbsp; |
+        <a href="../html/listcss.html">Styling List</a>&nbsp; |
+        <a href="../html/typography.html">Font-styles</a>
+      </nav>
+    </header>
     <main>
-      <h2>colors :</h2>
-      <p>To set a colour of a text we can use the "color" property</p>
+      <h2>Anchor tag css properties</h2>
+      <h3>Pusedo classes</h3>
       <p>
-        To set the backgroud-color for the page we can use the "backgroud-color"
-        property
+        anchor tag like all the tags, it got some default properties present in
+        html. For ex. blue colr by default when we hover over it vl b turned to
+        different color. once used it vl b turned to grey color. Psudeo class
+        "a: hover, a:visited" can be used to override all the default properties
+        provided by browser
       </p>
-      <p>
-        We can use the coolors.io website to see the contrast check and other
-        items
-      </p>
-      <p>
-        Different types to set color values are hex value,rgb,rgba,hs;,hue,hsa etc
-      </p>
-      <h2>Fonts :</h2>
-      <p>
-        we can use the font-size to set the value of the font.. by default
-        "font-size:16px"
-      </p>
-      <p> We should not change the font-size at root elements as it would affect the browser settings to change the font-size as per user wish</p>
-      <p>
-        We can use
-        <strong
-          >"font"(shorthand property which lets you set multiple fonts at a same
-          time)</strong
-        >
-        property to set the font
-      </p>
-      <p id="ch"><i>width:40ch; will help us to restrict the element values to be 40 chars.. exceeded chars will be moved to the next line</i></p>
-      <p id="vw"> We can use relative properties like "em" refers parent element "rem" refers root element. values will get adjusted to the super element</p>
-    <p>We sometime required page height to be occupied fully. for that case we can use vh property to 100 instead of the height property we can use min-height as it vl enlarge the page as the content grows</p>
     </main>
     <footer></footer>
   </body>
