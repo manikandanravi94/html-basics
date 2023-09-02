@@ -28,6 +28,14 @@
             list-style-type: disc;
             list-style-image: url("../images/bullet-list-icon.jpg");
           }
+        /* a:hover is the pseudo class 
+        ul::marker is the pseudo element where we can apply specific to the element operation */
+      ul li:nth-child(3){
+        color: green;
+      }
+       li::marker{
+         color: bisque;
+        }
         </style>
     </head>
     <body>
@@ -41,7 +49,8 @@
             <ol start="20" reversed>
                 <li>Kubernetes</li>
                 <li>Cloud native</li>
-                <li>Hld's & Lld's</li>
+                <!-- below value specifies the list to start from different start position -->
+                <li value="2">Hld's & Lld's</li>
                 <li>Data structures & Algorithms</li>
             </ol>
             <h3>Front-end</h3>

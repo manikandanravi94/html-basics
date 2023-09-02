@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="Css columns" />
+    <link rel="icon" href="../images/m-icon.jpg" type="images/x-icon" />
+    <title>Css Columns</title>
+    <style>
+        body{
+            background-color: gray;
+            color: whitesmoke;
+            min-height: 100vh;
+            
+/* body element min-height:100vh will occupy the full page eventhough we dint have the content for the full page */
+        }
+      ul {
+        list-style-type: none;
+        padding: 0.8em;
+      }
+      li {
+        display: inline-block;
+      }
+      .navbar {
+        background-color: black;
+      }
+      a {
+        text-decoration: none;
+        color: whitesmoke;
+      }
+      a:hover {
+        color: burlywood;
+        background-color: white;
+        padding: 1em 1em 1em 1em;
+      }
+      .columns {
+        font-size: 1em;
+        column-count: 4;
+        column-width: 100px;
+        column-gap: 2em;
+        column-rule: solid 1px;
+      }
+      .columns h4 {
+        background-color: black;
+        padding: 1em;
+        color: whitesmoke;
+        break-before: column;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../html/index.html">Home</a></li>
+        </ul>
+      </nav>
+      <h2 style="text-align: center">Columns</h2>
+    </header>
+    <main>
+      <h3 style="text-align: center">Companies Worked</h3>
+      <section class="columns">
+        <h4>Citi bank</h4>
+        <p>
+           Working on analytics project which will calculate benchmarks
+          for the live order and signal the trading desk whoever subscribed to
+          the alert in which format they want the alert. That specific alert
+          will be delivered to them via the medium they have configured. 
+        </p>
+        <h4>Synechron </h4>
+        <p>
+          - Worked as a contractor for citi bank via syncheron. After
+          showing promising performance on analytics project.Citi bank hired me as a full-time employee from Synechron
+        </p>
+        <h4>Sella india software limited</h4>
+        <p>
+          worked on created wallet application where
+          they can load their card and make payment to their bills and worked on
+          back-office application to gather the data whichever the back officer
+          interested in. Worked on other multiple proiects as well
+        </p>
+        <h4>Cognizant</h4>
+        <p>
+           - Started my career in this company. worked on support
+          project intially for insurance domain metlife. then moved my career
+          into developer role. worked on enhancement projects and bug-fixes.
+        </p>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

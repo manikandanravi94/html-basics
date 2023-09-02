@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="Float css" />
+    <link rel="icon" href="../images/m-icon.jpg" type="images/x-icon" />
+    <title>Css Float</title>
+    <style>
+        body{
+font-size: 1.5em;
+/* background-color: powderblue; */
+        }
+        .proverb1{
+            background-color: rgb(41, 113, 58);
+        color: whitesmoke;
+        display: flow-root;
+      }
+      .proverb2{
+        background-color:  rgb(41, 113, 58);
+        color: whitesmoke;
+        display: flow-root;
+      }
+      .float-left{
+        /* float is the property used to keep the block element not cross the specified float style element */
+          float:left;
+          background-color:rgb(109, 198, 163);
+          font-size: 1.5rem;
+          width: 20%;
+          border-radius: 30%;
+          text-align: center;
+          /* height: 30%; */
+          border:2px solid;
+          padding: 3em 0em 3em 0em;
+          margin-right: 10px;
+      }
+      .float-right{
+          float:right;
+          background-color: rgb(109, 198, 163);
+          font-size: 1.5rem;
+          width: 20%;
+          /* height: 30%; */
+          border:2px solid;
+          padding: 3em 0em 3em 1em;
+          margin-left: 10px;
+      }
+      ul{
+        list-style-type:none ;
+        padding: 0.8em;
+      }
+      li{
+        display: inline-block;
+      }
+      .navbar{
+        background-color:  rgb(41, 113, 58);
+
+      }
+      a{
+        text-decoration: none;
+        color: whitesmoke;
+      }
+      a:hover{
+        color: blueviolet;
+        background-color: white;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar">
+            <ul>
+              <li><a href="../html/index.html">Home</a></li>
+            </ul>
+        </nav>
+        <h2 style="text-align: center; color: rgb(109, 198, 163);">Css Float</h2></header>
+    <main>
+        <section class="proverb1">
+      <div class="float-left">
+        Float Left Example
+      </div>
+      <p style="text-align: center; padding: 1em 5em 1em 2em;">
+        When we use the float property. p tag value is automatically moved to the opposite side of float specified value. If we have a huge content in the opposite side. we can use "display:flow-root" which will help place the section element not moved out of the specified length assigned for the float mentioend class element
+      </p>
+    </section>
+    <br>
+    <section class="proverb2">
+        <div class="float-right">
+          Float Left Example
+        </div>
+        <p style="text-align: center; padding: 1em 5em 1em 2em;">
+          We can use this property for any purpose. mostly it can be used in the places like images, providing explanations. This one is also not crossing the float mentioned position instead it is going to the next line.
+        </p>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

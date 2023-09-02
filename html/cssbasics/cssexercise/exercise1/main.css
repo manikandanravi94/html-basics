@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #B5C9C3;
+}
+
+h2 ,h3{
+    padding-top: 2em;
+    text-align: center;
+}
+
+ul{
+    margin-top: 1em;
+    list-style-type: none;
+    background-color: black;
+}
+.coursesul {
+    margin: 1em 6em 1em 6em;
+    border: solid;
+    border-radius: 2rem;
+    font-size: 2rem;
+    /* padding:1em; */
+ background-color: #B5C9C3;
+ /* display: inline-block; */
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* by default li display property is list-item which keeps the element one by one
+we are changing it to inline-block to keep it under the ul block element
+it will change the block element to inline with the block element mentioned outside
+*/
+nav li {
+    padding: 1em;
+    display: inline-block;
+}
+
+.coursesul li {
+    text-align: center;
+    padding-top :1em;
+    /* font-size: 20px; */
+    border: 2px solid;
+    
+}
+
+a:hover{
+    background-color: grey;
+    padding: inherit;
+}
