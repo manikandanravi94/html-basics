@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="Position Css" />
+    <link rel="icon" href="../images/m-icon.jpg" type="images/x-icon" />
+    <title>Css Position</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: powderblue;
+        color: whitesmoke;
+        font-size: 1.5em;
+        min-height: 500vh;
+        scroll-behavior: smooth;
+        position: relative;
+      }
+      ul {
+        list-style-type: none;
+        background-color: black;
+        padding: 1em;
+      }
+
+      li {
+        display: inline-block;
+      }
+      a {
+        color: whitesmoke;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: whitesmoke;
+        color: black;
+        padding: 1em;
+      }
+      a:active {
+        background-color: brown;
+      }
+      .outside-container {
+        border: 3px dashed black;
+        /* width: 75vw; */
+        height: 100vh;
+        margin: 40px auto;
+        /* position: relative; */
+      }
+      .inside-container {
+        border: 3px solid black;
+        /* width: 40%; */
+        height: 100vh;
+        margin: 6em;
+      }
+      .box-absolute {
+        /* position absolute will align the element specific to its root element if none of the parent element specified with its position:"relative".. if it specified content will be aligned respective to its parent element */
+        position: absolute;
+        /* text-align: center; */
+        top: 2em;
+        left: 0em;
+        background-color: gray;
+        color: whitesmoke;
+        /* width: 50vw; */
+        height: 50vh;
+        margin: 5em
+      }
+      .box-relative {
+        position: relative;
+        /* text-align: center; */
+        /* top: 2em;
+        left: 5em; */
+        margin: 1em;
+        background-color: brown;
+        color: whitesmoke;
+        /* width: 50vw; */
+        height: 100vh;
+      }
+      .box-fixed {
+        /* position absolute will align the element specific to its root element if none of the parent element specified with its position:"relative".. if it specified content will be aligned respective to its parent element */
+        position: fixed;
+        /* text-align: center; */
+        top: 5em;
+        /* left: 5em; */
+        /* margin: 1em; */
+        background-color: green;
+        color: whitesmoke;
+        /* width: 50vw; */
+        /* height: 100vh; */
+        z-index: 10;
+      }
+      .nav-sticky {
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+      }
+      .box-sticky{
+        position: fixed;
+        top:26em;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-sticky">
+        <ul>
+          <li>
+            <a href="../html/index.html">Home</a>
+          </li>
+        </ul>
+      </nav>
+      <h2 style="text-align: center; padding: 1em 1em 0em 1em">Css Position</h2>
+    </header>
+    <main>
+        <section id="1">
+      <div class="outside-container">
+        <div class="box-absolute">
+          <p>
+            Absolute - position absolute will align the element specific to its
+            root element if none of the parent element specified with its
+            position:"relative".. if it specified content will be aligned
+            respective to its parent element
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="2">
+      <div class="box-relative">
+        <p>
+          relative - position relative will keep the element in the position
+          relative to its parent element instead referring the parent element at
+          the start itself like absolute
+        </p>
+      </div>
+    </section>
+    <section id="3">
+      <div class="box-fixed">
+        <p>
+            sample for position:fixed
+          <!-- fixed- it will keep the content traverse through out the whole page -->
+        </p>
+      </div>
+    </section>
+    <section id="4">
+      <div class="box-sticky">
+        <p> <nav>
+            <ul>
+                <li><a href="#1">1</a></li>
+                <li><a href="#2">2</a></li>
+                <li><a href="#3">3</a></li>
+                <li><a href="#4">4</a></li>
+            </ul>
+        </nav></p>
+      </div>
+    </section>
+    </main>
+    <footer >
+        <!-- position sticky will keep the content sticked through out that particular page once the content page is over.. it will not be tranversed. sticky(1 page fixed equivalent we canconsider like this) -->
+        <div style="color: black;position: sticky; top: 100px; height:100vh">
+       &copy;Manikandan</div>
+    </footer>
+  </body>
+</html>
