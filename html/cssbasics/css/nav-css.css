@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    background-color: black;
+    padding: 1em;
+  }
+
+  li {
+    display: inline-block;
+  }
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color: whitesmoke;
+    color: black;
+    padding: 1em;
+  }
+  a:active {
+    background-color: brown;
+  }
+  .nav-sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }

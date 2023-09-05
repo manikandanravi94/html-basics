@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="description" content="Flex-box css">
+        <meta name="author" content="Manikandan">
+        <title>Flex-box</title>
+        <link rel="icon" href="../images/m-icon.jpg" type="images/x-icon">
+        <link rel="stylesheet" href="../css/nav-css.css" type="text/css">
+        <style>
+            body {
+                background-color: powderblue;
+                min-height: 100vh;
+            }
+            .outside-container {
+                display: flex;
+                width: 80vw;
+                height:200vh;
+                background-color: black;
+                border: 2px dotted darkgray; 
+                /* margin:5em; */
+                flex-direction: column;
+                /* flex direction decides how the inner element to be aligned with outer element
+                row - will keep the elements in the horizontal mode
+                column - will keep the elements in the verical mode
+                row-reverse - will reverse the element position
+                */
+                gap : 1rem;
+                /*
+                gap will decide on the space between each inner element
+                */
+                justify-content: space-evenly;
+                /* 
+                justify content will help to show the inner element with specific properties
+                space around: will space around the elements
+                space-between : will space between the elements 
+                */
+                align-items: flex-start;
+                /* 
+                align-item will align the element at the top,bottom center
+                row basis <-->
+                ^
+                | column basis
+                |
+
+                flex-start : will keep the element at the top
+                flex-end : will keep the element at the bottm
+                cennter: will keep the element at the center
+                */
+                flex-wrap: no wrap;
+                /*
+                wrap will wrap the content as per the outside container
+                */
+                flex: 1 1;
+                /* flex is the short hand property for flex grow flex shrink flex-width
+                flex: 2 2 40px;
+                */
+                flex-basis: fit-content;
+                /* 
+                flex-flow is the short hand property for flex-direction and wrap
+                */
+            }
+            .box-flex {
+                display: block;
+               color: #fff;
+               background-color: blueviolet;
+               width: 100px;
+               height: 120px;
+               border: 2px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../html/index.html">Home</a></li>
+                </ul>
+            </nav>
+            <h2 style="text-align: center;">Flex-box</h2>
+        </header>
+        <main>
+            <div>
+                <p style="margin:1em 5em 1em 5em; text-align: justify;">It is used to display the elements in whatever the mode we want to show for example we can show the vertical elements in the horizontal mode. horizontal bar in the vertical mode. Below are the frequent properties used specific to flex-box</p>
+            </div>
+            <div class="outside-container">
+                <div class="box-flex">
+                    <p>display: flex</p>
+                </div>
+                <div class="box-flex">
+                    <p>align-items : center,flex-start, flex-end</p>
+                </div>
+                <div class="box-flex">
+                    <p>justify-content : flex-start, flex-end,center,spacke-between, space around</p>
+                </div>
+                <div class="box-flex">
+                    <p>flex-direction : row,column,row-reverse,column-reverse</p>
+                </div>
+                <div class="box-flex">
+                    <p>flex-wrap : wrap, no-wrap, wrap-reverse</p>
+                </div>
+                <div class="box-flex">
+                    <p>flex-grow, flex-shrink : value can be given in the form of (x)times</p>
+                </div>
+                <div class="box-flex">
+                    <p>flex : (flex-grow) (flex-shrink) flex-basis Ex: 1 1 40px</p>
+                </div>
+                <div class="box-flex">
+                    <p>flex-flow : (flex direction) (flex wrap)</p>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>
