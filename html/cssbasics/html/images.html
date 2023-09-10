@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="Images and background-images css sample">
+    <meta name="author" content="Manikandan">
+    <link rel="icon" href="../images/m-icon.jpg">
+    <!-- <link rel="stylesheet" href="../css/nav-css.css"> -->
+    <title>Images</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            background-image: url("../images/bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-image: linear-gradient will be used to apply our own color for the background */
+            /* background-position: bottom; it will apply bottom of the image to the background of the html  */
+            /* background-clip: text will clip the background image for the content text and by using opactiy we can use the 
+            image to be applied for that particular text
+            */
+            font-size: 1.5em;
+            color: white;
+            text-shadow: 2px 2px 2px rgb(149, 74, 115);
+        }
+        .profile-pic-cover{
+            display: flex;
+            border-bottom: 5px solid rgb(196, 10, 115);
+            justify-content: left;
+            /* width:50%; */
+            gap: 20px;
+            justify-content: space-between;
+            /* background-position: top; */
+            
+        }
+        .profile-pic {
+            /* width: 20%; */
+            /* display: float; */
+            padding: 
+            /* border: 5px dotted grey; */
+        }
+        .profile-pic img {
+              border-radius: 50%;
+        }
+        .about {
+            text-align: right;
+            display: block;
+            line-height: 25px;
+            padding: 10px 50px 10px 50px;
+        }
+        h3{
+            /* background-color: rgba(0, 0, 0, 0.2); */
+            padding: 50px 10px 10px 10px;
+            border-radius: 30%;
+            align-items: center;
+        }
+        
+ul {
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 1em;
+  }
+
+  li {
+    display: inline-block;
+  }
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color: whitesmoke;
+    color: black;
+    padding: 1em;
+  }
+  a:active {
+    background-color: brown;
+  }
+  .nav-sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+    </style>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar">
+            <ul>
+              <li><a href="../html/index.html">Home</a></li>
+            </ul>
+        </nav>
+        <!-- <h1 style="text-align: center;">Images & background-images</h1></header> -->
+    <main>
+      <section class="profile-pic-cover">
+        <figure class="profile-pic">
+          <img
+            src="../images/profile-pic.jpeg"
+          width="250px"  height="250px"
+            alt="profile-pic"
+          />
+          <figcaption style="position: absolute; left: -1000px;">Mani</figcaption>
+        </figure>
+        <h3 ><span class="about">Manikandan</span>
+        <span class="about">Full stack developer</span>
+        <span class="about">Looks to solve problems in this programming world</span>
+        <span class="about" ><a style="text-decoration: underline;" href="https://www.linkedin.com/in/manikandan-ravi-91748176">LinkedIn</a> &nbsp; | &nbsp; Mail : manikandanravi94@gmail.com &nbsp; | &nbsp; Contact-no : +91-9047070158</span>
+        </h3>
+      </section>
+      
+    </main>
+    <footer></footer>
+  </body>
+</html>
