@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../../images/m-icon.jpg" type="images/x-icon">
+    <title>Card Project</title>
+    <style>
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+     body {
+        background-color: rgb(84, 78, 78);
+     }
+     header, footer {
+        position: sticky;
+        background-color: rgb(48, 47, 47);
+        color: whitesmoke;
+        min-width: 100vw;
+        padding :0.3em;
+        text-align: center;
+     }
+     main {
+        /* min-height:80vh; */
+     }
+
+     header {
+        top: 1;
+     }
+     footer {
+        bottom: 1;
+     }
+     .container {
+        padding-top:20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1em;
+       
+     }
+
+     img {
+        border-radius: 50%;
+     }
+     
+     .box {
+        text-align: center;
+        line-height: 40px;
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        background-color: rgb(190, 186, 186);
+        border-radius: 10%;
+        height: fit-content;
+     }
+     .nav {
+         text-align: center;
+         background-color: white;
+         color: whitesmoke;
+         padding: 10px;
+     }
+     a {
+        color: black;
+     }
+
+     .caption {
+        font-weight: bolder;
+        font-size: 1.5rem;
+     }
+
+     @media screen and (min-width: 768px){
+        .nav {
+            display: none;
+        }
+        .container{
+            flex-direction: row;
+            /* justify-content: center; */
+            flex-wrap: wrap;
+        }
+        .box{
+            height: max-content;
+            width: min(400px,600px);
+            height: min(70%,667px);
+            align-items: center;
+        }
+
+        .box:last-child {
+            order:-1;
+        }
+     }
+
+     @media screen and (min-width: 992px){
+        .nav {
+            display: none;
+        }
+        
+        .container{
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            height: 88vh;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .box{
+            height: max-content;
+            width: min(300px,350px);
+            height: min(70%,667px);
+            align-items: center;
+            padding: 30px;
+        }
+        .profile-pic img {
+            height: min(50%,500px);
+        }
+     }
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="header">Mani's Team</h1>
+        </header>
+        <main>
+            <nav class="nav"><a href>UI</a> &nbsp; &nbsp; <a href="#back">Back-end</a> &nbsp;&nbsp; <a href="#marketing">Marketing</a></nav>
+            <section class="container">
+            <article id="ui" class="box">
+                <h2>Manikandan</h2>
+                <figure class="profile-pic">
+                  <img src="../../images/profile-pic.jpeg" width="200px" height="200px" alt="Mani-profile pic">
+                <figcaption class="caption">Aspiring Ui Enterpreneur</figcaption>
+                </figure>
+            </article>
+            <article id="back-end" class="box">
+                <h2>Divya</h2>
+                <figure class="profile-pic">
+                  <img src="../../images/divya.jpg" width="200px" height="200px" alt="Mani-profile pic">
+                <figcaption class="caption">Aspiring Back-end Enterpreneur</figcaption>
+                </figure>
+            </article>
+            <article id="marketing" class="box">
+                <h2>Mani</h2>
+                <figure class="profile-pic">
+                  <img src="../../images/profile-pic.jpeg" width="200px" height="200px" alt="Mani-profile pic">
+                <figcaption class="caption">Aspiring Marketing Enterpreneur</figcaption>
+                </figure>
+            </article>
+        </section>
+        </main>
+        <footer><h2 class="footer">&copy;Manikandan</h2></footer>
+    </body>
+</html>
