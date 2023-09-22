@@ -28,6 +28,9 @@ view1.style.display = "flex";
 view2.style.display = "flex";
 view2.style.backgroundColor = "brown";
 view2.innerHTML = "<p>Testing DOM</p>";
+const appendDiv =document.createElement("p");
+appendDiv.innerHTML="appended via append child and created via create element";
+view2.appendChild(appendDiv);
 console.log(document.activeElement);
 
 // example below to access and assign to html elements
@@ -66,3 +69,51 @@ console.log(nodeView[0].parentElement.lastElementChild.previousElementSibling);
 
 //below line considers the last child as text and hence previous child is a "div" tag and hence it returns the div tag as response
 console.log(nodeView[0].parentElement.lastChild.previousSibling);
+
+console.log("adding elements and removing elements");
+
+console.log(view2);
+
+const view2Childrens =view2.childNodes;
+
+
+view2Childrens[0].style.display="none";
+
+//remove child sample by accessing the childs in the element
+
+view2.removeChild(view2.firstChild.nextElementSibling);
+console.log(view2.children);
+
+//first element child and first child are common in html collection
+console.log(view2.firstElementChild);
+
+console.log(view2.firstChild);
+
+// already view2 is flex and column direction
+// view2.style.display="flex";
+// view2.style.alignItems="center";
+view2.style.justifyContent="space-around";
+view2.style.flexDirection="column";
+view2.style.flexWrap="wrap";
+
+const appendDivFunction = (parent, iter) =>{ 
+
+const div = document.createElement("div");
+div.style.display="flex";
+div.style.width="100px";
+div.style.height="100px";
+div.style.backgroundColor="grey";
+div.style.color="white";
+div.style.alignItems="center";
+div.style.justifyContent="center";
+div.innerHTML="<p></p>";
+div.textContent=iter;
+parent.appendChild(div);
+};
+
+
+for(let i=1;i<=12;i++){
+appendDivFunction(view2,i);
+}
+
+// view2.removeChild(view2.firstElementChild);
