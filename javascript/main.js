@@ -73,6 +73,6 @@ for(let i=0;i<myShelf.length;i++)
 {
     //push pop --> add and removes the last element at the array. This operation returns count as the response type
     // shift,unshift -->add and removes the element at the start of the arry. This operation returns boolean as the response type
-    myShelf.pop
+    myShelf.pop;
 console.log("type of " + typeof(myShelf[i]) + " value : "+myShelf[i]);
 }
